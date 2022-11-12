@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a:link{text-decoration: none; color: green;}
+a:visited{text-decoration: none; color: brown;}
+a:hover{ cursor: pointer; color: white;}
+a:active{ color: greenyellow;}
+
+body{
+    background-color: bisque;
+}
+
+h1, .col-12, .cont-chat{
+    text-align: center;
+}
+
+input{
+    max-width: 100%;
+}
+
+.error-txt{
+    display: none;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    width: 40vw;
+    background-color: hsl(240, 50%, 75%);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 3px hsl(240, 50%, 30%);
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"]{
+    float: left;
+    position: relative;
+    /* border: 2px solid red; */
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 900px) {
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{
+        position: relative;
+        width: 50%;
+    }
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.error-txt{
+    width: 30%;
+    margin: auto;
+    background-color: burlywood;
+    border: none;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pass-eye{
+    position: absolute;
+    right: calc(100% - 170px);
+    top: 6px;
+    cursor: pointer;
+}
+
+.cont-chat{
+    background-color: black;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.cont-chat-btn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
